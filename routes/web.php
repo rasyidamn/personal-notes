@@ -17,3 +17,6 @@ Route::get('/notes/{note}/edit', [NoteController::class, 'edit'])
 
 Route::put('/notes/{note}', [NoteController::class, 'update'])
     ->name('notes.update');
+
+Route::get('/notes/{note}', [NoteController::class, 'show'])
+    ->name('notes.show');

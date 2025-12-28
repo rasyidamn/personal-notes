@@ -2,7 +2,7 @@
 
 <div class="card w-full bg-base-200/30 shadow hover:shadow-lg">
     <div class="card-body">
-        <h2 class="card-title hover:text-secondary transition-colors duration-100"><a href="" class="truncate"> {{ $note->title }} </a></h2>
+        <h2 class="card-title hover:text-secondary transition-colors duration-100"><a href="{{ route('notes.show', $note) }}" class="truncate"> {{ $note->title }} </a></h2>
         <p class="line-clamp-2">
             {{ $note->note }}
         </p>

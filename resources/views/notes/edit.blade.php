@@ -1,5 +1,3 @@
-@props(['note'])
-
 <x-layout title="Edit">
     <div class="w-2xl mx-auto">
         <form action="{{ route('notes.update', $note) }}" method="POST">
