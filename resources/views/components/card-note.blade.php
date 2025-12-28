@@ -8,10 +8,10 @@
         </p>
         <div class=" card-actions justify-between">
             <div>
-                <p class="text-xs text-base-content/50"> {{ $note->updated_at->diffForHumans() }} </p>
+                <p class="text-xs text-base-content/50"> {{ $note->created_at->diffForHumans() }} </p>
             </div>
             <div class="flex gap-2">
-                <a href="" class="btn btn-info btn-xs rounded-full">
+                <a href=" {{ route('notes.edit', $note) }} " class="btn btn-info btn-xs rounded-full">
                     <x-lucide-pencil class="size-3" />
                 </a>
                 <form action="{{ route('notes.destroy', $note->id) }}" method="POST">
